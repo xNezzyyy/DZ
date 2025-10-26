@@ -20,26 +20,12 @@ while cnt_moves>0:
     for i in range(3):
         print(hist[i])
     if cnt_moves<=4:
-        if (hist[0][0]==hist[1][1]==hist[2][2])\
-              or (hist[0][0]==hist[1][0]==hist[2][0])\
-              or (hist[0][1]==hist[1][1]==hist[2][1])\
-         or (hist[0][2]==hist[1][2]==hist[2][2])\
-              or (hist[0][0]==hist[0][1]==hist[0][2])\
-                  or (hist[1][0]==hist[1][1]==hist[1][2])\
-         or (hist[2][0]==hist[2][1]==hist[2][2])\
-              or (hist[0][2]==hist[1][1]==hist[2][0]):
+        if (hist[0][0]==hist[1][1]==hist[2][2])or (hist[0][0]==hist[1][0]==hist[2][0]) or (hist[0][1]==hist[1][1]==hist[2][1])\
+         or (hist[0][2]==hist[1][2]==hist[2][2])or (hist[0][0]==hist[0][1]==hist[0][2])or (hist[1][0]==hist[1][1]==hist[1][2])\
+         or (hist[2][0]==hist[2][1]==hist[2][2])or (hist[0][2]==hist[1][1]==hist[2][0]):
               if cnt_moves%2==0:
                    print("ПОБЕДИЛ Игрок1")
               else:
                    print("ПОБЕДИЛ Игрок2")
-              break     
-        #  
-        #  if (hist[0][0]!="!" and hist[1][1]!="!" and hist[2][2])!="!"\
-        #       or (hist[0][0]==hist[1][0]==hist[2][0]  and all(hist[x][0]!="!" for x in range(3)))\
-        #       or (hist[0][1]==hist[1][1]==hist[2][1] and all(hist[x][1]!="!" for x in range(3)))\
-        #  or (hist[0][2]==hist[1][2]==hist[2][2]and all(hist[x][2]!="!" for x in range(3)))\
-        #       or (hist[0][0]==hist[0][1]==hist[0][2]and all(hist[0][x]!="!" for x in range(3)))\
-        #           or (hist[1][0]==hist[1][1]==hist[1][2] and all(hist[1][x]!="!" for x in range(3)))\
-        #  or (hist[2][0]==hist[2][1]==hist[2][2]and all(hist[2][x]!="!" for x in range(3))==True)\
-        #       or (hist[0][2]==hist[1][1]==hist[2][0]and hist[0][2]!="!" and hist[1][1]!="!" and hist[2][0]!="!"):
-                   
+              break
+print("НИЧЬЯ")
